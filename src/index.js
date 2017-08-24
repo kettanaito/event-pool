@@ -6,11 +6,11 @@ type TEventsPoolOptions = {
   /* Even target to dispatch expected event(s) */
   eventTarget: EventTarget,
 
-  /* Function to call once timeout is reached */
-  callback: (pool: Array<CustomEvent | Event>, data: Array<mixed>) => void,
-
   /* Timeout (ms) before the callback / next aggregation */
   timeout: number,
+
+  /* Function to call once timeout is reached */
+  callback: (pool: Array<CustomEvent | Event>, data: Array<mixed>) => mixed,
 
   /* Enable prolonging the timeout by its value once the next event is caught */
   aggregate: boolean
@@ -21,7 +21,7 @@ const defaultOptions: TEventsPoolOptions = {
   events: '',
   eventTarget: document,
   timeout: 20,
-  callback: events => events,
+  callback: (pool, data) => ({ pool, data }),
   aggregate: false
 };
 
@@ -62,9 +62,6 @@ const EventsPool = (options: TEventsPoolOptions) => {
           /* Reset the inner state for the further accumulation */
           pool = [];
           runningTimeout = 0;
-
-          /* Remove the event listener */
-          eventTarget.removeEventListener(eventName, eventHandler, false);
         }, timeout);
       }
     }, false);

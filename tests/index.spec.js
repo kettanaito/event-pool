@@ -1,5 +1,5 @@
-import EventsPool from '../src/index';
-import {CustomEvent} from './test_helper';
+import 'jsdom-global/register';
+import EventsPool from '../lib';
 import {expect} from 'chai';
 
 function createElement (elementName) {

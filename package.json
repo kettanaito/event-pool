@@ -5,7 +5,7 @@
   "source": "src/index.js",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha ./tests/*.spec.js",
+    "test": "mocha --compilers js:babel-core/register  \"tests/**/*@(.js|.jsx)\"",
     "flow": "flow",
     "build": "webpack",
     "prepublish": "npm run build"
@@ -41,6 +41,8 @@
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.7.0",
     "flow-bin": "^0.52.0",
+    "jsdom": "^11.2.0",
+    "jsdom-global": "^3.0.2",
     "mocha": "^3.5.0",
     "webpack": "^3.5.3"
   }

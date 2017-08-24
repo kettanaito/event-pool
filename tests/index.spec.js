@@ -1,3 +1,7 @@
+import EventsPool from '../src/index';
+import {CustomEvent} from './test_helper';
+import {expect} from 'chai';
+
 function createElement (elementName) {
   return document.body.appendChild(document.createElement(elementName));
 }

@@ -5,7 +5,7 @@
   "source": "src/index.js",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha ./tests/*.spec.js",
+    "test": "mocha --compilers js:babel-core/register --require tests/test_helper.js \"tests/**/*@(.js|.jsx)\"",
     "flow": "flow",
     "build": "webpack",
     "prepublish": "npm run build"
@@ -36,6 +36,7 @@
     "babel-preset-flow": "^6.23.0",
     "chai": "^4.1.1",
     "flow-bin": "^0.52.0",
+    "jsdom": "^11.2.0",
     "mocha": "^3.5.0",
     "webpack": "^3.5.3"
   }

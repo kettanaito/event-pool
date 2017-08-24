@@ -38,7 +38,7 @@ const EventsPool = (options: TEventsPoolOptions) => {
 
   /* Loop through each event name and attach a proper event listener to it */
   eventsList.forEach((eventName: string) => {
-    const eventHandler = eventTarget.addEventListener(eventName, (event: CustomEvent | Event) => {
+    eventTarget.addEventListener(eventName, (event: CustomEvent | Event) => {
       /* Aggregate custom event details or general event instances */
       pool.push(event);
 

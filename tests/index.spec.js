@@ -1,6 +1,6 @@
 import 'jsdom-global/register';
-import EventsPool from '../lib';
 import { expect } from 'chai';
+import EventsPool from '../lib';
 
 function createElement (elementName) {
   return document.body.appendChild(document.createElement(elementName));

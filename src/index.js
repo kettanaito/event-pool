@@ -20,8 +20,8 @@ type TEventsPoolOptions = {
 const defaultOptions: TEventsPoolOptions = {
   events: '',
   eventTarget: document,
-  callback: pool => console.log('Accumulated pool:', pool),
   timeout: 20,
+  callback: events => events,
   aggregate: false
 };
 

@@ -6,6 +6,12 @@ I must say this is a very small and simple library meant mainly for educational 
 
 Thank you once more.
 
+## Running `EventsPool`
+After cloning the repository, just run the following command in the terminal and develop under `src/` folder:
+```
+npm start
+```
+
 ## Git workflow
 Regardless of the goal of your contribution, Git workflow is the same sequence of steps to perform. Please be acknowledges with the following workflow to experience a seamless contribution cycle to this repository.
 1. Create a dedicated issue/feature branch from the current `master` branch. Make sure to name your branch with a corresponding prefix (i.e. `issue/fix-this` or `feature/amazing-change`):

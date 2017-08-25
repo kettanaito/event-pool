@@ -5,6 +5,7 @@
   "source": "src/index.js",
   "main": "lib/index.js",
   "scripts": {
+    "start": "webpack --watch",
     "test": "mocha --compilers js:babel-core/register  \"tests/**/*@(.js|.jsx)\"",
     "flow": "flow",
     "build": "webpack",

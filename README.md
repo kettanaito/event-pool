@@ -1,13 +1,13 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/events-pool" title="NPM version">
-    <img src="https://img.shields.io/npm/v/events-pool.svg?style=flat-square" />
+    <img src="https://img.shields.io/npm/v/events-pool.svg" />
   </a>
   <a href="https://www.npmjs.com/package/events-pool" title="Dependency status">
-    <img src="https://david-dm.org/kettanaito/events-pool.svg?style=flat-square" />
+    <img src="https://david-dm.org/kettanaito/events-pool.svg" />
   </a>
-  <img src="https://travis-ci.org/kettanaito/events-pool.svg?branch=master&style=flat-square" title="Build status">
-  <a href="">
-    <img src="https://img.shields.io/coveralls/kettanaito/events-pool.svg?style=flat-square" title="Coverage" />
+  <img src="https://travis-ci.org/kettanaito/events-pool.svg?branch=master" title="Build Status">
+  <a href="https://coveralls.io/github/kettanaito/events-pool?branch=master">
+    <img src="https://coveralls.io/repos/github/kettanaito/events-pool/badge.svg?branch=master" alt="Coverage Status" />
   </a>
 </p>
 

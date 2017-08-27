@@ -1,7 +1,15 @@
 # Source files
-src/
-tests/
+src
 
 # Configurations
+.babelrc
 .flowconfig
+.travis.yml
 webpack.*
+
+# Builds & test files
+tests
+coverage
+
+# Super secret stuff
+internal

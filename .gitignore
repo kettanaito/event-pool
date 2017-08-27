@@ -2,11 +2,14 @@
 node_modules/
 package-lock.json
 
-# Super secret stuff
-internal
-
 # Build
 lib/
 
 # Logs
 *.log
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Super secret stuff
+internal

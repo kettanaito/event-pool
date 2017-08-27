@@ -5,6 +5,10 @@
   <a href="https://www.npmjs.com/package/events-pool" title="Dependency status">
     <img src="https://david-dm.org/kettanaito/events-pool.svg?style=flat-square" />
   </a>
+  <img src="https://travis-ci.org/kettanaito/events-pool.svg?branch=master&style=flat-square" title="Build status">
+  <a href="">
+    <img src="https://img.shields.io/coveralls/kettanaito/events-pool.svg?style=flat-square" title="Coverage" />
+  </a>
 </p>
 
 <p align="center">

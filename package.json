@@ -8,7 +8,8 @@
     "start": "webpack --watch",
     "build": "webpack",
     "flow": "flow",
-    "test": "mocha tests/**/*.js --compilers js:babel-core/register",
+    "test": "mocha --compilers js:babel-core/register",
+    "test:coverage": "istanbul cover _mocha -- --compilers js:babel-core/register",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -37,11 +38,13 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "chai": "^4.1.1",
+    "coveralls": "^2.13.1",
     "eslint": "^4.5.0",
     "eslint-config-airbnb-base": "^11.3.2",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.7.0",
     "flow-bin": "^0.52.0",
+    "istanbul": "^1.0.0-alpha.2",
     "jsdom": "^11.2.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^3.5.0",
